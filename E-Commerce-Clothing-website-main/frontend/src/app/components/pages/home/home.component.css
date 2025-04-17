@@ -1,0 +1,157 @@
+
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    background-color: #414141;
+  }
+  
+
+
+  li a {
+    height: 22.5rem;
+    width: 20rem;
+    border: 2px solid #ffffff; /* Change border color */
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgb(224, 227, 42);
+  }
+  
+  li a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    border-color: #2e2606; /* Change border color on hover */
+  }
+  
+  
+  li a img{
+    object-fit: cover;
+    height: 14.5rem;
+  }
+  
+  .content{
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+  }
+  
+  .favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .favorite.not{
+    color: grey;
+  }
+  
+  .stars{
+    margin-bottom: 0.2rem;
+  }
+  
+  .product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .origins{
+    flex: 9;
+  }
+  
+
+  
+  .origins span {
+    border-radius: 2rem;
+    background-color: #ffffff; /* Change background color */
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #333333; /* Change text color */
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+  }
+  
+  
+  .cook-time{
+    font-size: 0.9rem;
+    flex: 3;
+    text-align: right;
+  }
+  
+  .price{
+    position: absolute;
+    bottom: 0;
+    left: 0.9rem;
+    background: white;
+    padding: 0.3rem 100% 0 0;
+    color: #ffffff;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+    background-color: #414141;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; /* Change background color */
+    align-items: center;
+    color: #ffffff; /* Change text color */
+    margin-top: -15px;
+  }
+  
+  
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;}
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer0 {
+    font-weight: 1200;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer3 h4 {
+    margin: 0 10px;
+  }
+  .footer2 div {
+    margin: 10px;
+  }

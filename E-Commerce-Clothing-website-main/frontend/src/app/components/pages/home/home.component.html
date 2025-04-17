@@ -1,0 +1,63 @@
+
+<!-- <app-tags></app-tags> -->
+<app-not-found
+[visible]="!items || !items.length"
+resetLinkText="Reset Search">
+</app-not-found>
+
+<ul>
+    <li *ngFor="let item of items">
+      <a routerLink="/item/{{item.id}}">
+        <img [src]="item.imageUrl" [alt]="item.name"/>
+        <div class="content">
+          <div class="name">
+            <strong> {{item.name}} </strong>
+          </div>
+          
+          <div class="stars">
+
+          </div>
+          <div class="product-item-footer">
+            <div class="origins">
+              <span *ngFor="let origin of item.origins">
+                {{origin}}
+              </span>
+            </div>
+  
+            <div class="cook-time">
+              <span>
+                <i class="fa-solid fa-building-columns" style="color: #c9d6ee;"></i>
+                &nbsp;
+                <i class="fa-solid fa-truck-fast" style="color: #f7f7f7;"></i>
+                &nbsp;
+         </span>
+              {{item.cookTime}}
+
+            </div>
+          </div>
+  
+          <div class="price">
+            <span>
+              {{item.price | currency:"INR"}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+
+  <footer>
+    <div class="footer0">
+      <h1>Moshi Retailers</h1>
+    </div>
+    <div class="footer1 ">Connect with us at<div class="social">
+      </div>
+    </div>
+    <div class="footer2">
+      
+        <div class="div">Privacy Policy</div>
+        <div class="div">Terms</div>
+      
+    </div>
+  </footer>

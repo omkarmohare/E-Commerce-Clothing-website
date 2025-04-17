@@ -1,0 +1,84 @@
+header {
+  position: relative;
+  background: black;
+  padding: 0;
+}
+
+a {
+  color: rgb(255, 253, 125);
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Center items vertically within the container */
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Center items horizontally within the nav */
+}
+
+.srch {
+  margin-right: 1rem; /* Add some right margin for spacing */
+}
+
+a:hover {
+  background: #222020;
+  color: white;
+  cursor: pointer;
+}
+
+a.logo {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  padding: 1rem;
+  display: flex;
+  align-items: center; /* Center items horizontally within the anchor */
+}
+
+a span {
+  background: #594dff;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background: rgb(37, 35, 35);
+  display: none;
+}
+
+.menu-container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+/* Add or adjust styles as needed */
+.tags {
+  margin-top: 10px; /* Adjust the margin-top to provide spacing */
+}
+

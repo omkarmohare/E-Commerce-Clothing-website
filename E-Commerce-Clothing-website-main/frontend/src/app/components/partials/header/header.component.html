@@ -1,0 +1,40 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo"><h1><i class="fa-solid fa-m" style="color: #ffffff;"></i>oshi Retailers!</h1></a>
+    <nav>
+      <div class="srch">
+        <app-search></app-search>
+      </div>
+      <div class="tags">
+        <app-tags></app-tags>
+      </div>
+      <div>
+      <ul>
+        <!-- <li *ngIf="!isAuth" class="srch"></li> -->
+        <li *ngIf="!isAuth">
+          <a routerLink="/login"><h3><i class="fa-solid fa-user" style="color: #e0e4eb;"></i> &nbsp;Login</h3></a>
+        </li>
+
+        <!-- <li
+           *ngIf="!user.token">
+           <a routerLink="/login">login</a>
+        </li> -->
+        <li *ngIf="isAuth" class="menu-container">
+          <a routerLink="/dashboard">{{user.name}}</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a (click)="logout()">Logout</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">
+            
+           <h3> Cart <i class="fa-solid fa-cart-shopping" style="color: #f0f1f5;"></i> &nbsp;<span *ngIf="cartQuantity">{{cartQuantity}}</span> </h3>
+          </a>
+        </li>
+      </ul>
+      </div>  </nav>
+      
+  </div>
+</header>
